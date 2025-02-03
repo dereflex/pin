@@ -964,13 +964,19 @@
 
     <div id="lock-screen">
     <p>Ingresa el PIN para desbloquear gratis:</p>
-    <p>Ver Pin en nuestro canal de Whatsapp:</p>
+    <p>Ver PIN en nuestro canal de WhatsApp:</p>
+    <button id="whatsapp-btn">Ir al Canal</button> <!-- Nuevo botón -->
     <input type="password" id="pin-input" placeholder="PIN">
     <button id="unlock-btn">Desbloquear</button>
     <p id="error-message" style="color: red; display: none;">PIN incorrecto. Inténtalo nuevamente.</p>
-  </div>
+</div>
 
-    <script>
+<script>
+    document.getElementById("whatsapp-btn").addEventListener("click", function() {
+        window.location.href = "https://whatsapp.com/channel/0029VawiBipLtOj6yJZhH714"; // Reemplaza con el enlace de tu canal
+    });
+</script>
+        
     const PIN = "1203"; // PIN requerido
     const lockScreen = document.getElementById("lock-screen");
     const pinInput = document.getElementById("pin-input");
