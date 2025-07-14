@@ -1191,7 +1191,7 @@
         return true;
       }
       const elapsedTime = Date.now() - parseInt(lastUnlock, 10);
-      return elapsedTime >= 24 * 60 * 60 * 1000; // 24 horas en milisegundos
+      return elapsedTime >= 30 * 24 * 60 * 60 * 1000; // 30 días en milisegundos
     }
 
     // Bloquear la pantalla si corresponde
